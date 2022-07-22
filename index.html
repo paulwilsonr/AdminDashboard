@@ -16,29 +16,33 @@
             <h1 class="sidebarTitleText">Dashboard</h1>
         </div>
         <ul class="dashboardList">
-            <li class="dashboardItem"><img src="./media/home.png" class="dashboardItemIcon">Home</li>
-            <li class="dashboardItem"><img src="./media/profile.png" class="dashboardItemIcon">Profile</li>
-            <li class="dashboardItem"><img src="./media/messages.png" class="dashboardItemIcon">Messages</li>
-            <li class="dashboardItem"><img src="./media/history.png" class="dashboardItemIcon">History</li>
-            <li class="dashboardItem"><img src="./media/tasks.png" class="dashboardItemIcon">Tasks</li>
-            <li class="dashboardItem"><img src="./media/communities.png" class="dashboardItemIcon">Communities</li>
+            <li class="dashboardItem bold"><img src="./media/home.png" class="dashboardItemIcon">Home</li>
+            <li class="dashboardItem bold"><img src="./media/profile.png" class="dashboardItemIcon">Profile</li>
+            <li class="dashboardItem bold"><img src="./media/messages.png" class="dashboardItemIcon">Messages</li>
+            <li class="dashboardItem bold"><img src="./media/history.png" class="dashboardItemIcon">History</li>
+            <li class="dashboardItem bold"><img src="./media/tasks.png" class="dashboardItemIcon">Tasks</li>
+            <li class="dashboardItem bold"><img src="./media/communities.png" class="dashboardItemIcon">Communities</li>
         </ul>
         <ul class="dashboardList">
-            <li class="dashboardItem"><img src="./media/settings.png" class="dashboardItemIcon">Settings</li>
-            <li class="dashboardItem"><img src="./media/support.png" class="dashboardItemIcon">Support</li>
-            <li class="dashboardItem"><img src="./media/privacy.png" class="dashboardItemIcon">Privacy</li>
+            <li class="dashboardItem bold"><img src="./media/settings.png" class="dashboardItemIcon">Settings</li>
+            <li class="dashboardItem bold"><img src="./media/support.png" class="dashboardItemIcon">Support</li>
+            <li class="dashboardItem bold"><img src="./media/privacy.png" class="dashboardItemIcon">Privacy</li>
         </ul>
     </div>
-    <div class="header">
-        <input type="text" class="searchbar">
-        <div class="headerusername">
-            <img src="" class="icon">
-            <p>Paul Wilson</p>
+    <div class="header shadow">
+        <div class="searchbarContainer">
+            <img src="./media/magnify.png" id="searchMagnifier">
+            <input type="text" class="searchbar">
+        </div>
+        <div class="headerUsername">
+            <img src="./media/bell.png" alt="bell notificationn" class="icon bell">
+            <img src="./media/userIcon.jpg" alt="user picture" class="userPicture smaller">
+            <p class="username bold">Paul Wilson</p>
         </div>
         <div class="headerGreeting">
-            <img src="" class="icon">
-            <p>Hi there,</p>
-            <h2>Paul Wilson (@paul)</h2>
+            <img src="./media/userIcon.jpg" class="userPicture bigger">
+            <p class="greetingText bold">Hi there,</p>
+            <h2 class="greetingUsername bold">Paul Wilson (@paul)</h2>
         </div>
         <div class="buttonsContainer">
             <input type="button" value="New">
@@ -49,48 +53,72 @@
     <div class="main">
         <div class="projectsContainer">
             <h3 class="mainTitle">Your Projects</h3>
-            <div class="projectCard">
-                <h4 class="cardTitle">Super Cool Project</h4>
-                <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="card shadow">
+                <h4 class="cardTitle whiteFiller">Super Cool Project</h4>
+                <p class="cardText whiteFiller">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla
                     facilisi etiam dignissim diam.</p>
-                <div class="cardIcons"></div>
+                <div class="cardIcons">
+                    <img class="icon" src="./media/eye.png">
+                    <img class="icon" src="./media/star.png">
+                    <img class="icon" src="./media/fork.png">
+                </div>
             </div>
-            <div class="card">
-                <h4 class="cardTitle">Less Cool Project</h4>
-                <p class="cardText">Ut enim blandit volutpat maecenas volutpat blandit aliquam.
+            <div class="card shadow">
+                <h4 class="cardTitle whiteFiller">Less Cool Project</h4>
+                <p class="cardText whiteFiller">Ut enim blandit volutpat maecenas volutpat blandit aliquam.
                     Consequat id porta nibh venenatis cras sed. Fames ac turpis egestas integer
                     eget aliquet nibh praesent tristique.</p>
-                <div class="cardIcons"></div>
+                <div class="cardIcons">
+                    <img class="icon" src="./media/star.png">
+                    <img class="icon" src="./media/eye.png">
+                    <img class="icon" src="./media/fork.png">
+                </div>
             </div>
-            <div class="card">
-                <h4 class="cardTitle">Impossible App</h4>
-                <p class="cardText">Egestas fringilla phasellus faucibus scelerisque eleifend
+            <div class="card shadow">
+                <h4 class="cardTitle whiteFiller">Impossible App</h4>
+                <p class="cardText whiteFiller">Egestas fringilla phasellus faucibus scelerisque eleifend
                     donec pretium vulputate sapien. Metus vulputate eu scelerisque felis imperdiet.
                     In hendrerit gravida rutrum quisque non tellus orci ac auctor.</p>
-                <div class="cardIcons"></div>
+                <div class="cardIcons">
+                    <img class="icon" src="./media/star.png">
+                    <img class="icon" src="./media/eye.png">
+                    <img class="icon" src="./media/fork.png">
+                </div>
             </div>
-            <div class="card">
-                <h4 class="cardTitle">Easy Peasy App</h4>
-                <p class="cardText">Faucibus nisl tincidunt eget nullam non nisi est sit amet. Vestibulum rhoncus est
+            <div class="card shadow">
+                <h4 class="cardTitle whiteFiller">Easy Peasy App</h4>
+                <p class="cardText whiteFiller">Faucibus nisl tincidunt eget nullam non nisi est sit amet. Vestibulum rhoncus est
                     pellentesque elit ullamcorper dignissim.</p>
-                <div class="cardIcons"></div>
+                <div class="cardIcons">
+                    <img class="icon" src="./media/star.png">
+                    <img class="icon" src="./media/eye.png">
+                    <img class="icon" src="./media/fork.png">
+                </div>
             </div>
-            <div class="card">
-                <h4 class="cardTitle">Ad Blocker</h4>
-                <p class="cardText">Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Bibendum enim
+            <div class="card shadow">
+                <h4 class="cardTitle whiteFiller">Ad Blocker</h4>
+                <p class="cardText whiteFiller">Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Bibendum enim
                     facilisis gravida neque convallis a cras semper auctor.</p>
-                <div class="cardIcons"></div>
+                <div class="cardIcons">
+                    <img class="icon" src="./media/star.png">
+                    <img class="icon" src="./media/eye.png">
+                    <img class="icon" src="./media/fork.png">
+                </div>
             </div>
-            <div class="card">
-                <h4 class="cardTitle">Money Maker</h4>
-                <p class="cardText">Sagittis vitae et leo duis ut diam quam nulla. Id consectetur purus ut faucibus.</p>
-                <div class="cardIcons"></div>
+            <div class="card shadow">
+                <h4 class="cardTitle whiteFiller">Money Maker</h4>
+                <p class="cardText whiteFiller">Sagittis vitae et leo duis ut diam quam nulla. Id consectetur purus ut faucibus.</p>
+                <div class="cardIcons">
+                    <img class="icon" src="./media/star.png">
+                    <img class="icon" src="./media/eye.png">
+                    <img class="icon" src="./media/fork.png">
+                </div>
             </div>
         </div>
         <div class="announcementsContainer">
             <h3 class="mainTitle">Announcements</h3>
-            <div class="anouncementCard">
+            <div class="anouncementCard shadow">
                 <div class="anouncement">
                     <h5 class="announcementTitle">Site Maintenance</h5>
                     <p class="announcementText">Ornare aenean euismod elementum nisi quis eleifend quam adipiscing
@@ -101,7 +129,7 @@
                     <p class="announcementText">Pellentesque pulvinar pellentesque habitant morbi tristique senectus et
                         netus et. Turpis egesta...</p>
                 </div>
-                <div class="anouncement">
+                <div class="anouncement lastAnnouncement">
                     <h5 class="announcementTitle">Updated Privacy Policy</h5>
                     <p class="announcementText">Hac habitasse platea dictumst quisque. Dui nunc mattis enim ut tellus.
                         Nec feugiat nisl pretium...</p>
@@ -110,25 +138,27 @@
         </div>
         <div class="trendingContainer">
             <h3 class="mainTitle">Trending</h3>
+            <div class="trendingItemsContainer shadow">
             <div class="trendingItem">
-                <img class="trendingIcon" src="">
+                <img class="trendingIcon userPicture smaller" src="./media/userIcon.jpg">
                 <p class="trendingHandle">@tegan</p>
                 <p class="trendingName">World Peace Builder</p>
             </div>
             <div class="trendingItem">
-                <img class="trendingIcon" src="">
+                <img class="trendingIcon userPicture smaller" src="./media/userIcon.jpg">
                 <p class="trendingHandle">@morgan</p>
                 <p class="trendingName">Super Cool Project</p>
             </div>
             <div class="trendingItem">
-                <img class="trendingIcon" src="">
+                <img class="trendingIcon userPicture smaller" src="./media/userIcon.jpg">
                 <p class="trendingHandle">@kendall</p>
                 <p class="trendingName">Life Changing App</p>
             </div>
             <div class="trendingItem">
-                <img class="trendingIcon" src="">
+                <img class="trendingIcon userPicture smaller" src="./media/userIcon.jpg">
                 <p class="trendingHandle">@alex</p>
                 <p class="trendingName">No Traffic Maker</p>
+                </div>
             </div>
         </div>
     </div>
